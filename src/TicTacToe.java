@@ -1,8 +1,19 @@
-public class Main {
+import java.util.Scanner;
+
+public class TicTacToe {
     public static void main(String[] args) {
-        char[][] board = new char[][]{{' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
+        char[][] board = new char[][]{{' ', ' ', ' '},
+                                      {' ', ' ', ' '},
+                                      {' ', ' ', ' '}};
+
         printBoard(board);
+        Scanner scanner = new Scanner(System.in);
     }
+
+
+
+
+
 
     private static void printBoard(char[][] board) {
         System.out.println(board[0][0] + "|" + board[0][1] + "|" + board[0][2]);
